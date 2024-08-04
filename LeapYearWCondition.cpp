@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  int y;
+  cout << "Enter a year: ";
+  cin >> y;
+  if (cin.fail()) {
+            cout << "Invalid input, Expected an integer."
+                 << endl;
+  } else{
+        if((y%4==0 && y%100!=0)||(y%400==0)){
+            cout<<y<<" is a leap year";
+        } else{
+            cout<<y<<" is not a leap year";
+        }
+    }
+
+  return 0;
+}
